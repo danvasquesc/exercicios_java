@@ -1,14 +1,4 @@
 .metadata/
-
 bin/
-
-.settings/
-.metadata/
-bin/
-.setting/
-.classpath
-.project
 target/
 build/
-*.log
-*.tmp
