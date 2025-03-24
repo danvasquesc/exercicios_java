@@ -35,6 +35,7 @@ public class Versao1 {
 
 	}
 	
+	
 	/*os metodos sao estáticos 'static' pois não pode chamar um metodo não estático em outro metodo estático, no caso o metodo 'main' (acima)*/
 	
 	public static double circumference(double radius) {
