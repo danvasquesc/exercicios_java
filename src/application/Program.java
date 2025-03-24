@@ -28,11 +28,33 @@ public class Program {
 
 			System.out.print("Quantity in stock: ");
 			product.quantity = sc.nextInt();
+
+			System.out.println(); /* pular uma linha */
+			System.out.println("Product data: " + product);
+
+			System.out.println();
+			System.out.print("Enter the number of products to be added in stock: ");
+			int quantity = sc.nextInt();
+			product.addProducts(quantity); /*
+											 * é criado a variavel 'quantity' e o usuario irá digitar a quantidade de
+											 * produto no estoque. essa variavel vai ser usada no método 'addProducts'.
+											 * (lembrando que essa variavel criada agora não é a mesma que o atributo,
+											 * pois isso lá na função usa-se 'this' pra nao ter ambiguidade
+											 */
+
 			
-			System.out.println(product);
+			
+			
+			System.out.println();
+			System.out.println("Update data: " + product);
 
+			System.out.println();
+			System.out.print("Enter the number of products to be removed from stock: ");
+			quantity = sc.nextInt();
+			product.removeProducts(quantity);
+
+			System.out.println();
+			System.out.println("Update data: " + product);
 		}
-
 	}
-
 }
