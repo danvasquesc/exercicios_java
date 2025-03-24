@@ -44,10 +44,5 @@ public class Versao1 {
 	public static double volume(double radius) {
 		return 4.0 * PI * radius * radius * radius / 3.0; /*não precisa colocar parenteses pois multiplicação e divisão tem a mesma ordem de precedencia, logo, como a divisão está no final, será a ultima*/
 	}
-	
-	
-	
-	
-	
 
 }

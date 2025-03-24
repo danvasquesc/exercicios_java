@@ -22,6 +22,7 @@ public class Product {
 									 * 'quantity'
 									 */
 	}
+	
 
 	/* metodo remove a quantidade de produtos */
 	public void removeProducts(int quantity) {
