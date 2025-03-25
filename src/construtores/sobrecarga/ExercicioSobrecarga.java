@@ -1,9 +1,9 @@
-package exercicios.poo;
+package construtores.sobrecarga;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercicio1Construtores {
+public class ExercicioSobrecarga {
 
 	public static void main(String[] args) {
 
@@ -11,30 +11,23 @@ public class Exercicio1Construtores {
 
 		try (Scanner sc = new Scanner(System.in)) {
 
+			ProductSobrecarga p = new ProductSobrecarga(); /* aqui é um construtor padrão */
+
 			System.out.println("Enter product data: ");
 			System.out.print("Name: ");
-			String name = sc.nextLine(); /* criada variaveis temporarias pra receber a leitura dos valores */
+			String name = sc.nextLine();
 
 			System.out.print("Price: ");
 			double price = sc.nextDouble();
 
-			System.out.print("Quantity in stock: ");
-			int quantity = sc.nextInt();
-
-			ProductConstrutores product = new ProductConstrutores(name, price,
-					quantity); /*
-								 * depois da entrada dos dados, instanciamos o objeto com o construtor.
-								 * lembrando que os parametros precisam ser os mesmos das entradas de dados. O
-								 * construtor serve para impedir que o programador faça um erro de instanciar
-								 * valores vazios
-								 */
+			ProductSobrecarga product = new ProductSobrecarga(name, price);
 
 			System.out.println();
 			System.out.println("Product data: " + product);
 
 			System.out.println();
 			System.out.print("Enter the number of products to be added in stock: ");
-			quantity = sc.nextInt();
+			int quantity = sc.nextInt();
 			product.addProducts(quantity);
 
 			System.out.println();

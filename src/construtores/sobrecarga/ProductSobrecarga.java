@@ -1,6 +1,6 @@
 /*Essa classe pertence a classe ExercicioSobrecarga*/
 
-package exercicios.poo;
+package construtores.sobrecarga;
 
 public class ProductSobrecarga {
 

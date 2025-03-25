@@ -1,6 +1,6 @@
 /*Essa classe pertence a classe 'Versao2', e poderia ser criada no pacote 'util' pois é uma classe utilitária*/
 
-package exercicios.poo;
+package membros.estaticos;
 
 public class CalculatorV2 {
 	
