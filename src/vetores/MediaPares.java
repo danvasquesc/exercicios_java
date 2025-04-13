@@ -7,7 +7,7 @@ package vetores;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercicio10 {
+public class MediaPares {
 
 	public static void main(String[] args) {
 
