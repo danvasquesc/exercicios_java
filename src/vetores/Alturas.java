@@ -24,7 +24,8 @@ public class Alturas {
 
 			int i = 0;
 			for (i = 0; i < n; i++) {
-				System.out.printf("Dados da %da pessoa: \n", i + 1); /* pra nao aparecer 'dados da 0ª pessoa, e sim 1ª */
+				System.out.printf("Dados da %da pessoa: \n",
+						i + 1); /* pra nao aparecer 'dados da 0ª pessoa, e sim 1ª */
 				System.out.print("Nome: ");
 				vectNome[i] = sc.next();
 
@@ -36,24 +37,26 @@ public class Alturas {
 			}
 
 			double soma = 0.0;
-			double mediaAltura = 0.0;
 			for (i = 0; i < n; i++) {
 				soma = soma + vectAltura[i];
-				mediaAltura = soma / n;
 			}
 
-			System.out.println(" ");
+			double mediaAltura = soma / n;
+
+			System.out.println();
 			System.out.printf("Altura media: %.2f%n", mediaAltura);
 
-			double menorIdade = 0;
+			int contagemMenores16 = 0; /* estrutura que faz a contagem de quantas pessoas tem < 16 anos */
 			for (i = 0; i < n; i++) {
 				if (vectIdade[i] < 16) {
-					menorIdade = (double) (vectIdade[i] / n) * 100;
+					contagemMenores16 = contagemMenores16 + 1;
 				}
 			}
 
-			System.out.println();
-			System.out.print("Pessoas com menos de 16 anos: " + menorIdade + "%");
+			double porcentagemMenores16 = (contagemMenores16 * 100.0) / n;
+
+			System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n",
+					porcentagemMenores16); /* quando coloca '%%' aparece o simbolo de porcentagem na impressão */
 
 			for (i = 0; i < n; i++) {
 				if (vectIdade[i] < 16) {
