@@ -1,4 +1,4 @@
-# 📂 Exercícios em Java - Prática e Aprendizado
+# 📂 Prática e Aprendizado em Java
 
 Este repositório contém os exercícios e práticas desenvolvidos durante o curso [Java COMPLETO - Programação Orientada a Objetos](https://www.udemy.com/course/java-curso-completo/?couponCode=KEEPLEARNING), ministrado pelo professor Nélio Alves.
 
