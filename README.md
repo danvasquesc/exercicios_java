@@ -1,71 +1,91 @@
 # 📂 Prática e Aprendizado em Java
 
-Este repositório contém os exercícios e práticas desenvolvidos durante o curso [Java COMPLETO - Programação Orientada a Objetos](https://www.udemy.com/course/java-curso-completo/?couponCode=KEEPLEARNING), ministrado pelo professor Nélio Alves.
-
-O objetivo é **organizar e documentar** a resolução dos exercícios abordados ao longo do curso, auxiliando no aprendizado e na fixação dos conceitos de Java e Programação Orientada a Objetos (POO).
+Este repositório reúne as práticas que estou desenvolvendo ao longo dos meus estudos em Java, com base no curso [Java COMPLETO Programação Orientada a Objetos + Projetos](https://www.udemy.com/course/java-curso-completo/?couponCode=KEEPLEARNING), ministrado pelo professor Nélio Alves. O objetivo deste projeto é consolidar os conhecimentos essenciais da linguagem. A estrutura do projeto foi organizada para simular boas práticas de desenvolvimento em projetos reais, com pacotes separados por temas de estudo. Conforme o aprendizado avança, novas implementações e conceitos mais avançados serão incorporados à estrutura existente.
 
 <br>
 
 ## Tecnologias Utilizadas
 
-- **Java** - Linguagem principal do curso.
-
-- **Eclipse** - IDE utilizada para desenvolvimento.
-
-- **Git & GitHub** - Controle de versão e armazenamento do projeto.
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Eclipse](https://img.shields.io/badge/Eclipse%20IDE-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 <br>
 
-## Estrutura do Repositório e Organização das Pastas
+## Estrutura de Pastas
 
-Os exercícios estão organizados em pastas conforme os temas abordados no curso, facilitando a navegação e o acesso ao conteúdo. 
+O projeto está organizado de forma a facilitar a separação de conceitos e a futura escalabilidade em um ambiente de desenvolvimento real. A estrutura de diretórios foi pensada para tornar mais claro o propósito de cada parte do código:
 
-`src/` - Diretório principal onde os códigos-fonte dos exercícios estão armazenados.
+### Descrição dos Pacotes
 
-`exercicios_logica/` - Contém exercícios relacionados à lógica de programação.
+- **application**:  
+  Contém a classe principal `Program.java`, centralizando a execução do projeto. Este pacote simula a estrutura de aplicações reais, onde ficam a inicialização e a organização geral dos serviços.
 
-`exercicios_poo/` - Contém exercícios focados em Programação Orientada a Objetos.
+- **entities**:  
+  Contém a classe `Product.java`. É o pacote onde ficam as entidades do domínio (modelos de dados) do projeto. Este pacote simula a estrutura de aplicações reais.
 
-`listaexercicios/` - Pasta onde são armazenadas listas de exercícios e materiais complementares.
+- **construtores.sobrecarga**:  
+  Exercícios focados no estudo de **construtores** e **sobrecarga de métodos** em Java. Cada classe representa um exercício específico.
 
-`README.md` - Documento contendo informações sobre o repositório.
+- **encapsulamento**:  
+  Exercícios dedicados ao conceito de **encapsulamento**, reforçando boas práticas de proteção dos dados nas classes.
 
-Cada arquivo/classe dentro dessas pastas representa um exercício individual. No início de cada arquivo, há um comentário contendo o enunciado do exercício.
+- **logica**:  
+  Exercícios de **lógica de programação**.  
+  As classes são organizadas por listas de exercícios, nomeadas como `ListaXExercicioY` (ex: `Lista1Exercicio1`, `Lista2Exercicio1`, etc.).  
+  Este pacote também contém os **PDFs** com os enunciados das listas, facilitando a consulta.
+
+- **membros.estaticos**:  
+  Exercícios voltados ao entendimento e uso de **membros estáticos** (`static`) em Java.
+
+- **poo**:  
+  Exercícios de **Programação Orientada a Objetos**, com foco na **instanciação de objetos** e conceitos básicos.  
+  (Estudos mais avançados, como herança, polimorfismo e abstração, serão desenvolvidos em pacotes futuros.)
+
+- **vetores**:  
+  Exercícios práticos sobre **vetores** (`arrays`) em Java, trabalhando criação, manipulação e acesso aos dados.
+
+---
+
+**Notas:**
+- O nome das classes nos pacotes varia de acordo com o tema ou exercício estudado.
+- A documentação completa (PDFs das listas dos exercícios) será incorporada aos respectivos pacotes à medida que a organização do projeto avançar.
 
 <br>
 
-## Como Clonar e Abrir o Projeto no Eclipse
+## Como clonar e abrir o projeto
 
-Se você deseja utilizar este repositório para estudo ou colaboração, siga os passos abaixo:
+### Clone o repositório:
+```
+git clone https://github.com/danvasquesc/exercicios_java.git
+```
 
-1. **Clonar o Repositório:** <br>
-Abra o terminal e execute:
+### No Eclipse
+- File → Import... → Existing Projects into Workspace.
 
-`git clone https://github.com/danvasquesc/exercicios_udemy_java.git`
+- Selecione a pasta clonada e clique em Finish.
 
-2. **Importar no Eclipse:** <br>
+<br>
 
-- Abra o Eclipse.
+### No VS Code
+- File → Open Folder... → selecione a pasta clonada.
 
-- Vá até **File** > **Import...**.
+- Certifique-se de ter instalado o Java Extension Pack.
 
-- Selecione **Existing Projects into Workspace** e clique em **Next**.
+- Aceite a sugestão para ativar o ambiente Java, se aparecer.
 
-- Clique em **Browse** e selecione a pasta do repositório clonado.
+---
 
-- Clique em **Finish** para importar o projeto.
-
-3. **Executar um Exercício:**
-
-- Navegue até a classe do exercício desejado.
-
-- Clique com o botão direito no arquivo e selecione **Run As** > **Java Application**.
+**Requisito:**
+- Tenha o JDK 17 (ou outra versão compatível) instalado e configurado corretamente na sua máquina.
 
 <br>
 
 ## Licença
 
 Este projeto é de uso livre para fins de aprendizado e estudos pessoais.
+
+<br>
 
 ---
 
