@@ -4,7 +4,7 @@ ano. Dizer também se o aluno está aprovado (PASS) ou não (FAILED) e, em caso 
 para o aluno obter o mínimo para ser aprovado (que é 60% da nota). Você deve criar uma classe Student para
 resolver este problema.*/
 
-package exercicios.poo;
+package poo;
 
 import java.util.Locale;
 import java.util.Scanner;

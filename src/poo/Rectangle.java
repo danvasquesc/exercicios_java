@@ -1,6 +1,6 @@
 /*Classe pertencente a classe Exercicio1POO*/
 
-package exercicios.poo;
+package poo;
 
 public class Rectangle {
 

@@ -1,6 +1,6 @@
 /*esta classe pertence a Exercicio3POO*/
 
-package exercicios.poo;
+package poo;
 
 public class Student {
 

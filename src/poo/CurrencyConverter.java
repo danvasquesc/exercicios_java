@@ -1,6 +1,6 @@
 /*esta classe pode ser criada no pacote 'util' - Pertence a classe 'ConversaoDolarParaReal'*/
 
-package exercicios.poo;
+package poo;
 
 public class CurrencyConverter {
 	

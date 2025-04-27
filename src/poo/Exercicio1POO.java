@@ -5,7 +5,7 @@ sua área, perímetro e diagonal. Usar uma classe como
 mostrado no projeto ao lado.
 */
 
-package exercicios.poo;
+package poo;
 
 import java.util.Locale;
 import java.util.Scanner;

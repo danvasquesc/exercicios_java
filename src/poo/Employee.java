@@ -1,6 +1,6 @@
 /*Esta classe pertence ao Exercicio2POO*/
 
-package exercicios.poo;
+package poo;
 
 public class Employee {
 

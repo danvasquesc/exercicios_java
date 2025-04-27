@@ -1,4 +1,4 @@
-package exercicios.poo;
+package poo;
 
 public class Triangle {
 

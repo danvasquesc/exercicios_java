@@ -6,7 +6,7 @@ para ser responsável pelos cálculos
 UTILIZACAO DE MEMBROS ESTATICOS*/
 
 
-package exercicios.poo;
+package poo;
 
 import java.util.Locale;
 import java.util.Scanner;

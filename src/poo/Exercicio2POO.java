@@ -4,7 +4,7 @@ salário do funcionário com base em uma porcentagem dada (somente o salário br
 afetado pela porcentagem) e mostrar novamente os dados do funcionário. Use a classe
 projetada abaixo.*/
 
-package exercicios.poo;
+package poo;
 
 import java.util.Locale;
 import java.util.Scanner;
