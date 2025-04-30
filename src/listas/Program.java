@@ -14,15 +14,19 @@ public class Program {
 		try (Scanner sc = new Scanner(System.in)) {
 
 			System.out.print("How many employees will be registered? ");
-			int n = sc.nextInt();
+			int n = sc.nextInt(); // Quantidade de funcionários a serem cadastrados
 
 			/*
 			 * instanciacao da List, mas como ela nao pode ser instanciada por ser uma
 			 * interface, é necessário instanciar nela uma classe, no caso o ArrayList. Por
 			 * ser java7 pra cima, nao precisa repetir o Tipo do ArrayList
 			 */
-			List<Employee> list = new ArrayList<>();
+			List<Employee> list = new ArrayList<>(); /*
+														 * Crie uma nova lista de funcionários vazia, onde eu vou
+														 * guardar vários objetos do tipo Employee
+														 */
 
+			// Loop para cadastrar os funcionários
 			for (int i = 0; i < n; i++) {
 				System.out.println();
 				System.out.printf("Employee #%d: \n", i + 1);
@@ -37,26 +41,80 @@ public class Program {
 				Double salario = sc.nextDouble();
 
 				/*
-				 * instanciacao de um novo funcionario dentro do objeto, ai uso o construtor de
-				 * sobrecarga
+				 * Criação de um novo funcionário com os dados fornecidos. Instanciacao de um
+				 * novo funcionario dentro do objeto, ai uso o construtor de sobrecarga
 				 */
 				Employee emp = new Employee(id, nome, salario);
 
-				/* adicionar o objeto emp na lista */
+				/* Adiciona o funcionário à lista */
 				list.add(emp);
 
 			}
 
-			/* leitura do id que vai ser incrementado o salario */
+			/*
+			 * leitura do id que vai ser incrementado o salario. Solicita o ID de um
+			 * funcionário para aumento de salário
+			 */
+			System.out.println();
 			System.out.print("Enter the employee id that will have salary increase: ");
-			Integer idSalary = sc.nextInt();
+			Integer idSalary = sc.nextInt(); // Leitura desse ID
 
-			/* verificacao que ve se o id existe */
+			Integer pos = position(list,
+					idSalary); /*
+								 * aqui está usando a funcao que criei abaixo. Se encontrar o id que estou
+								 * procurando, a variavel pos nao vai ser null, vai ser o indice/posicao do Id.
+								 * Esse list é a lista la em cima que instanciei
+								 */
+			if (pos == null) {
+				System.out.println("This id does not exist!"); // ID não encontrado
+			} else {
+				System.out.print("Enter the percentage: ");
+				double percent = sc.nextDouble();
+				// Aumenta o salário do funcionário usando o método da classe Employee
+				list.get(pos).increaseSalary(
+						percent); /*
+									 * get(pos) vai acessar o funcionario que está na posicao pos, que vai receber o
+									 * aumento de salario. Ai eu chamo o metodo que criei no Employee que vai
+									 * receber o valor da porcentagem pra calcular o aumento
+									 */
+			}
+
+			System.out.println();
+			System.out.println("List of employees:");
+			for (Employee emp : list) { /* pra cada emp do tipo Employee da minha list, faça */
+				System.out.println(emp);
+			}
 
 		}
 
-		/* funcao auxiliar pra procurar um elemento na lista (30:52) */
+	}
 
+	/*
+	 * Método auxiliar para encontrar a posição (índice) de um funcionário com base
+	 * no ID
+	 */
+	/*
+	 * esse metodo vai receber como argumento uma lista de funcionarios que dei o
+	 * nome de list (nao é a mesma do main, está fora do main) e um id. Esse metodo
+	 * vai retornar o INDICE, POSICAO do id na lista que estou procurando. Ela tem
+	 * que ser static pois está dentro da classe Main, que é static tambme
+	 */
+	public static Integer position(List<Employee> list, int id) { /* metodo que vai retornar a posicao/indice do Id */
+		for (int i = 0; i < list.size(); i++) { /*
+												 * o size() é toda a lista, ou seja, vai encerrar o for quando o i for
+												 * menor do que o tamanho da lista
+												 */
+			if (list.get(i).getId() == id) { /*
+												 * get é uma funcao que pega o elemento na posicao i, se esse id for
+												 * igual ao que estou procurando, vai retornar a posicao (i)
+												 */
+				return i;
+			}
+		}
+		return null; /*
+						 * se o for percorrer toda a lista e nao encontrar o Id que estou procurando,
+						 * vai encerrar e retornar null
+						 */
 	}
 
 }
