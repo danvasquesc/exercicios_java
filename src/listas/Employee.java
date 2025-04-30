@@ -44,6 +44,11 @@ public class Employee {
 
 	}
 
+	@Override /*
+				 * anotacao pro compilador informar caso tenha erro de digitacao. Basicamente
+				 * diz: estou reescrevendo um método que já existe na classe pai (classe Obj do
+				 * java)
+				 */
 	public String toString() {
 		return id + ", " + name + ", " + String.format("%.2f", salary);
 
