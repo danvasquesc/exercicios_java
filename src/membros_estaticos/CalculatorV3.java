@@ -1,7 +1,7 @@
 /*Essa classe pertence a classe 'Versao3'
  * Aqui vamos transformar os metodos em estaticos, pois eles nao precisam de objeto para serem chamados*/
 
-package membros.estaticos;
+package membros_estaticos;
 
 public class CalculatorV3 {
 	

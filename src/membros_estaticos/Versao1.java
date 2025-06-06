@@ -1,6 +1,6 @@
 /*Classe criada para estudar Membros Estáticos - Parte 1*/
 
-package membros.estaticos;
+package membros_estaticos;
 
 import java.util.Locale;
 import java.util.Scanner;

@@ -2,7 +2,7 @@
  * 
  * Aqui não é necessário instanciar o objeto, pois os metodos sao estaticos e é só chamar a classe 'Calculator'*/
 
-package membros.estaticos;
+package membros_estaticos;
 
 import java.util.Locale;
 import java.util.Scanner;
