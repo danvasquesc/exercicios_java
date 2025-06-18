@@ -14,7 +14,7 @@ Este repositório reúne as práticas que estou desenvolvendo ao longo dos meus 
 
 ## Estrutura de Pastas
 
-O projeto está organizado de forma a facilitar a separação de conceitos e a futura escalabilidade em um ambiente de desenvolvimento real. A estrutura de diretórios foi pensada para tornar mais claro o propósito de cada parte do código:
+O projeto está organizado de forma a facilitar a separação de conceitos. A estrutura de diretórios foi pensada para tornar mais claro o propósito de cada parte do código:
 
 ### Descrição dos Pacotes
 
@@ -45,6 +45,18 @@ O projeto está organizado de forma a facilitar a separação de conceitos e a f
 - **vetores**:  
   Exercícios práticos sobre **vetores** (`arrays`) em Java, trabalhando criação, manipulação e acesso aos dados.
 
+- **matriz**:  
+  Exercícios sobre matrizes bidimensionais, com foco em leitura, escrita e manipulação de dados em estruturas 2D.
+
+- **listas**:  
+  Exercícios utilizando listas (`List`), abordando inserção, remoção, busca e uso do ArrayList.
+
+- **date_time**:  
+  Práticas de data e hora (`java.time`), incluindo `LocalDate`, `LocalDateTime`, `Instant`, `DateTimeFormatter` e fuso horário.
+
+- **enumeracao_composicao**:  
+  Exercícios que exploram enumerações (`enum`) e o conceito de composição entre classes, aplicando modelagem orientada a objetos.
+  
 ---
 
 **Notas:**
