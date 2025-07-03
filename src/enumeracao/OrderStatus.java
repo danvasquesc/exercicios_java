@@ -1,4 +1,4 @@
-package enumeracao_composicao;
+package enumeracao;
 
 public enum OrderStatus {
 
